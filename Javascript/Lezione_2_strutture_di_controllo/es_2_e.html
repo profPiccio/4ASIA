@@ -1,0 +1,48 @@
+<html>
+
+<!-- Dati due numeri e una stinga effettuare 
+l'operazione matematica contenuta all'interno 
+della stringa . La stringa puo' contenere 
+le parole somma,differenza,quoziente,prodotto . 
+Se la stringa contiene un valore diverso far apparire 
+il messaggio 'Nessuna operazioni possibile'-->
+
+<script type="text/javascript">
+'use strict';
+
+// dichiarazione variabili
+let risultato;
+let x;
+let y;
+let parola ;
+
+//assegnazione
+x=2;
+y=1;
+parola = "somma"
+
+// esecuzione operazioni
+switch (parola){
+	case "somma":
+		risultato= x + y ;
+		alert(risultato);
+		break;
+	case "prodotto":
+		risultato= x * y ;
+		alert(risultato);
+		break;
+	case "differenza":
+		risultato= x - y ;
+		alert(risultato);
+		break;
+	case "quoziente":
+		risultato= x / y ;
+		alert(risultato);
+		break;
+	case default:
+		alert('Nessuna operazioni possibile')
+}
+//output
+
+</script>
+</html>
