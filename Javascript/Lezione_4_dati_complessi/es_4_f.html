@@ -1,0 +1,38 @@
+<!-- dato un array contenente i cognomi degli alunni e uno contenente i 
+voti visualizzare il voto dello studente "X"  -->
+
+
+<html>
+<script type="text/javascript">
+
+let cognome = [];
+let voti = [];
+let i;
+
+cognome = ["Picciolini","Volpi","X"];
+voti =[4,8,6];
+
+for (i=0;i<cognome.length;i++){
+	if (cognome[i]=="X"){
+		document.write(cognome[i]+" "+voti[i]+"<br>");
+	}
+}
+
+// se si usa una mappa si ottiene lo stesso
+//risultato in maniera più efficiente
+
+const mappa = new Map();
+mappa.set("Picciolini",4);
+mappa.set("Volpi",8);
+mappa.set("X",6);
+
+document.write(mappa.get("X"));	
+
+
+
+
+
+
+</script>
+</html>
+
