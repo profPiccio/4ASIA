@@ -1,0 +1,68 @@
+<!-- Data una mappa contente le
+squadre serie A di calcio e i punti 
+
+in classifica stampare a video il
+punteggio della squadra Inter -->
+
+
+
+<html>
+<script type="text/javascript">
+
+
+
+//creazione dell'oggetto Map
+
+const classifica = new Map();
+
+let massimo = 0;
+
+let max_sq = "";
+
+
+
+//inserisce le coppie chiave_valore
+
+classifica.set("Juventus",11);
+
+classifica.set("Salernitana",4);
+
+classifica.set("Inter",17);
+
+classifica.set("Milan",19);
+
+classifica.set("Napoli",21);
+
+classifica.set("Roma",15);
+
+classifica.set("Lazio",11);
+
+classifica.set("Atalanta",11);
+
+
+
+// stampare a video punteggio inter
+
+
+document.write(classifica.get("Inter"));	
+
+
+
+/* Visualizzare a video la squadra
+con 
+il punteggio massimo */
+
+
+
+for (let x in classifica){
+	
+	if (classifica.get(x)>massimo){
+		
+		massimo = classifica.get(x);
+		
+		max_sq = x;
+	}
+
+}
+ 
+document.write(max_sq);
