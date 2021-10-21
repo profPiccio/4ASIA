@@ -1,0 +1,50 @@
+<!-- Dati 6 numeri interi A,B,C,D,E,F calcolare e stampare 
+a video la somma di A e B, di C e D e di E e F mediante funzioni -->
+
+
+
+<html>
+
+<script type="text/javascript">
+'use strict'
+
+
+
+
+//creo la funzione 
+
+function sommaNumeri(x,y){
+	// dichiaro variabile per la somma
+	let somma;
+
+	// inizializzo la variabile
+	somma=0;
+
+	//calcolo
+	somma = x+y;
+
+	//ritorno
+	return (somma);
+}
+
+
+
+//dichiarazione variabilr
+let A,B,C,D,E,F;
+
+//assegnazione
+A=2;
+B=2;
+C=3;
+D=3;
+E=4;
+F=4;
+
+//stampa dei valori a video e chiamata delle funzioni
+
+document.write(sommaNumeri(A,B)+"<br>");
+document.write(sommaNumeri(C,D)+"<br>");
+document.write(sommaNumeri(E,F)+"<br>");
+
+</script>
+<html>

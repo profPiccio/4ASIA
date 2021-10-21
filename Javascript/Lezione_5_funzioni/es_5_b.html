@@ -1,0 +1,68 @@
+<!-- Scrivere due funzioni che restituisca una il valore massimo
+e una il minimo di un array -->
+
+
+
+<html>
+
+<script type="text/javascript">
+'use strict'
+
+
+
+
+//creo la funzione 
+
+function minArray(vettore){
+	// dichiaro variabile per la somma
+	let i;
+	let minimo;
+
+	// inizializzo la variabile
+	minimo=vettore[i];
+
+	//algoritmo
+	for (i=1;i<vettore.length;i++){
+		if (minimo > vettore[i]){
+			minimo = vettore[i];
+		}
+	}
+
+	//ritorno
+	return (minimo);
+}
+
+function maxArray(vettore){
+	// dichiaro variabile per la somma
+	let i;
+	let massimo;
+
+	// inizializzo la variabile
+	massimo=vettore[i];
+
+	//algoritmo
+	for (i=1;i<vettore.length;i++){
+		if (massimo < vettore[i]){
+			masssimo = vettore[i];
+		}
+	}
+
+	//ritorno
+	return (massimo);
+
+
+
+
+//dichiarazione variabilr
+let myarray;
+
+//assegnazione
+myarray=[1,1,2,2,3,4,5,6,7]
+//stampa dei valori a video e chiamata delle funzioni
+
+document.write(minArray(vettore)+"<br>");
+document.write(maxArray(vettore)+"<br>");
+
+
+</script>
+<html>
