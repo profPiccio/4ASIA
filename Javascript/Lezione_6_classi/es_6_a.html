@@ -1,0 +1,57 @@
+<!-- Realizzare una classe che descriva
+lo studente , con indicazione della matricola,
+nome,cognome,voti delle verifiche di Informatica.
+Implementare i seguenti metodi : 
+1) mostrare a video il nome e cognome della specifica 
+istanza dello studente 
+2) media dei voti presi nelle verifiche di informatica
+
+-->
+
+<html>
+<script type="text/javascript">
+'use strict'
+
+class Studente {
+	constructor(nome,cognome,matricola,voti){
+		this.nome = nome;
+		this.cognome = cognome;
+		this.matricola = matricola;
+		this.voti = voti;
+	
+	}
+	mostraNomeCompleto(){
+		return (this.nome + " " + this.cognome);
+
+	}
+	mediaVoti(){
+		let somma;
+		let i;
+		let media;
+		somma = 0;
+		for(i=0;i<this.voti.length;i++){
+			somma = somma + this.voti[i];
+		}
+		media = somma / this.voti.length;
+		return(media);
+	}
+}
+
+let studente1;
+let studente2; 
+studente1 = new Studente("Matteo","Picciolini","14A32",[6,4,7,2]);
+
+document.write(studente1.mostraNomeCompleto()+"<br>");
+document.write(studente1.mediaVoti()+"<br>");
+
+studente2 = new Studente("Fox","Mulder","32C32",[8,9,7,7]);
+document.write(studente2.mostraNomeCompleto()+"<br>");
+document.write(studente2.mediaVoti());
+
+
+
+
+
+
+</script>
+</html>
