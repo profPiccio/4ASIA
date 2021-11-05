@@ -1,0 +1,114 @@
+<html>
+<script type="text/javascript">
+
+function controllo(numero){
+    // Questa funzione prende come input un numero
+    // e controlla se è compreso tra 1 e 7
+   if (numero >=1 && numero <=7){
+        return (true);
+
+   }
+   else
+   {
+       return (false);
+   }
+    
+}
+
+function restituisciGiorno (numero){
+    // Questa funzione associa ad 
+    // un numero intero la corrispondenza
+    // con il giorno della settimana
+    if (numero ==1){
+        return ("Luendì");
+
+    }
+    else if (numero == 2){
+        return ("Matedì");
+    }
+    else if (numero == 3){
+        return ("Mercoledì");
+    }
+    else if (numero == 4){
+        return ("Giovedì");
+    }
+    else if (numero == 5){
+        return ("Venerdì");
+    }
+    else if (numero == 6){
+        return ("Sabato");
+    }
+    else {
+        return ("Domenica");
+    }
+}
+
+function restituisciGiornoSwitch (numero){
+    // Questa funzione associa ad 
+    // un numero intero la corrispondenza
+    // con il giorno della settimana usando il costrutto switch
+    switch (numero)  {
+        case 1:
+            return ("Luendì");
+            break;
+        case 2:
+            return ("Matedì");
+            break;
+        case 3:
+            return ("Mercoledì");
+            break;
+        case 4:
+            return ("Giovedì");
+            break;
+        case 5:
+            return ("Venerdì");
+            break;
+        case 6:
+            return ("Sabato"); 
+            break;
+        case 7:
+            return ("Domenica");
+            break;
+        default:
+            console.log("Errore Corrispondenza non trovata");
+
+    }
+    
+}
+
+
+function controllo2(numero){
+    // Questa funzione prende come input un numero
+    // e controlla se è compreso tra 1 e 7, in caso 
+    // affermativo richiama la funzione che stampa a video
+    // il giorno della settimana
+   if (numero >=1 && numero <=7){
+        document.write (restituisciGiorno(numero));
+   }
+   else
+   {
+    document.write ("Mi dispiace non riesco ad indovinare il numero");
+   }
+    
+}
+
+
+// corpo del programma 
+
+let numero;
+
+numero = parseInt(prompt("Inserisci un numero intero"));
+
+if (controllo(numero)==true){
+    document.write (restituisciGiorno(numero));
+
+}
+else
+{
+    document.write ("Mi dispiace non riesco ad indovinare il numero");
+}
+
+
+
+</script>
+</html>
