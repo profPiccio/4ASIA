@@ -1,0 +1,73 @@
+<!-- Realizzare una classe che rappresenti una squadra di calcio .
+La squadra dovrà avere un nome, il numero di scudetti vinti e un array 
+che contenga i risultati in punti delle ultime dieci partite 
+Realizzare i seguenti metodi
+1) Stampa a video del nome della squadra
+2) Stampa a video un numero di asterischi pari al numero di scudetti vinti
+3) Stampa a video del numero delle partite vinte
+
+-->
+
+<html>
+<script type="text/javascript">
+
+// definizione classi 
+class Squadra{
+
+	constructor(nome,scudetti,risultati){
+		this.nome = nome;
+		this.scudetti = scudetti;
+		this.risultati = risultati;
+	
+	}
+	
+	stampaNome(){
+		return (this.nome)
+	}
+	
+	stampaScudetti(){
+	
+		let aster;
+		let i;
+		
+		aster = "";
+	
+		for (i=0;i<this.scudetti;i++){
+			aster = aster +"*"
+		}
+		
+		return (aster)
+		
+		
+	}
+	
+	stampaVinte(){
+		let vinte;
+		let i;
+		
+		vinte = 0;
+	
+		for (i=0;i<this.risultati.length;i++){
+			if (this.risultati[i]==3){
+				vinte=vinte+1;
+			}
+		}
+		
+		return (vinte);
+	}
+	
+
+}
+
+
+
+squadra1 = new Squadra ("Salernitana",2,[1,3,3,0,0,1,3,0,3]);
+
+document.write(squadra1.stampaNome()+"<br>")
+document.write(squadra1.stampaScudetti()+"<br>")
+document.write(squadra1.stampaVinte()+"<br>")
+
+
+
+</script>
+</html>

@@ -1,0 +1,82 @@
+<!-- Realizzare una classe che rappresenti un rettangolo,
+un quadrato, un cerchio . Creare un metodo che calcoli l'area,
+fare la differenza tra le aree di due rttangoli,quandrati,cerchi
+-->
+
+<html>
+<script type="text/javascript">
+
+// definizione classi 
+class Rettangolo{
+
+	constructor(base,altezza){
+		this.base = base;
+		this.altezza = altezza;
+	
+	}
+	
+	area(){
+		let area;
+		area = this.base * this.altezza;
+		return (area)
+	}
+	
+
+}
+
+class Quadrato{
+	
+	constructor(lato){
+		this.lato = lato;
+		
+	
+	}
+	
+	area(){
+		let area;
+		area = this.lato * this.lato;
+		return (area)
+	}
+
+}
+
+class Cerchio{
+	
+	constructor(raggio){
+		this.raggio = raggio;
+		this.pigreco = 3.14;
+	
+	}
+	
+	area(){
+		let area;
+		area = this.raggio * this.raggio * this.pigreco;
+		return (area)
+	}
+
+}
+
+
+// istanze
+
+let rettangolo1,rettangolo2,quadrato1,quadrato2,cerchio1,cerchio2;
+
+rettangolo1 = new Rettangolo(3,4)
+rettangolo2 = new Rettangolo(6,8)
+
+document.write(rettangolo1.area()-rettangolo2.area()+"<br>")
+
+quadrato1 = new Quadrato(2);
+quadrato2 = new Quadrato(1);
+
+document.write(quadrato1.area()-quadrato2.area()+"<br>")
+
+cerchio1 = new Cerchio(2);
+cerchio2 = new Cerchio(1.4);
+
+document.write(cerchio1.area()-cerchio2.area()+"<br>")
+
+
+
+</script>
+</html>

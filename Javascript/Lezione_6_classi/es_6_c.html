@@ -1,0 +1,55 @@
+<!-- Realizzare una classe che rappresenti un orologio dove 
+un instanza rappresenta una specifica ora . 
+Realizzare i seguenti metodi
+1) Stampa a video dello specifico orario dell'istanza dell'orologio
+2) Stampa a video della scritta Mattina se le ore sono minori di 13
+3) Stampa a video dei secondi complessivi dell'orario
+-->
+
+<html>
+<script type="text/javascript">
+
+// definizione classi 
+class Orologio{
+
+	constructor(ore,minuti,secondi){
+		this.ore = ore;
+		this.minuti = minuti;
+		this.secondi = secondi;
+	
+	}
+	
+	stampaOrario(){
+		return (this.ore + ":"+this.minuti+":"+this.secondi)
+	}
+	
+	stampaMomentoGiornata(){
+		if (this.ore > 13){
+			return ("Pomeriggio")
+		}
+		else{
+			return ("Mattina")
+		}
+	}
+	
+	stampaSecondiTotali(){
+		let totali;
+		totali = this.secondi + this.minuti * 60 + this.ore * 60 * 60;
+		return (totali);
+	}
+	
+
+}
+
+
+
+adesso = new Orologio(13,45,24);
+
+document.write(adesso.stampaOrario()+"<br>")
+document.write(adesso.stampaMomentoGiornata()+"<br>")
+document.write(adesso.stampaSecondiTotali()+"<br>")
+
+
+
+</script>
+</html>
