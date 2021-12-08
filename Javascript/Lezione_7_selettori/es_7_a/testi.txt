@@ -1,0 +1,10 @@
+Realizzare una pagina web che abbia questi elementi ; 
+ - un testo "Cambio di colore" 
+ - un testo "Cambia il testo in Blu" con a fianco un pulsante con la scritta "Blu"
+   Il testo del paragrafo dovrà avere una grandezza di 1.5em 
+ - un testo "Cambia il testo in ROsso" con a fianco un pulsante con la scritta "Red"
+   Il testo del paragrafo dovrà avere una grandezza di 2em
+ - cliccando sul pulsante Blu o Red la scritta "Cambio di colore"dovrà essere colorata 
+   del colore corrispondete. 
+ - Gestire il progetto presentando tre file distinti , uno per il codice html, uno per il
+   foglio di stile e uno per il codice javascript
